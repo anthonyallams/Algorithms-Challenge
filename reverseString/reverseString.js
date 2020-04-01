@@ -14,4 +14,11 @@ const reverseString2 = str =>
     .reverse()
     .join("");
 
-reverseString2("apple");
+// SOLUTION 3: Using reduce
+const reverseString3 = str => {
+  return str.split("").reduce((reversed, value) => {
+    return value + reversed;
+  }, "");
+};
+
+reverseString3("apple");
