@@ -21,4 +21,13 @@ const reverseString3 = str => {
   }, "");
 };
 
-reverseString3("apple");
+// SOLUTION 4: Using for of loop
+const reverseString4 = str => {
+  let reversedString = "";
+
+  for (let char of str) {
+    reversedString = char + reversedString;
+  }
+  return reversedString;
+};
+reverseString4("apple");
