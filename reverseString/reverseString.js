@@ -7,4 +7,11 @@ const reverseString = str => {
   return reversedString;
 };
 
-reverseString("apple");
+// SOLUTION 2: Using reverse methods
+const reverseString2 = str =>
+  str
+    .split("")
+    .reverse()
+    .join("");
+
+reverseString2("apple");
