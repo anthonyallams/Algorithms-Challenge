@@ -1,6 +1,6 @@
 # CHALLENGE
 
-    Given a String, return the character that is most commonly used in the String
+    Given an array, return the character that has the highest occurence
 
 ## EXAMPLE
 
