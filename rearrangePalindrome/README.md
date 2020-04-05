@@ -6,3 +6,4 @@
 
     rearrangePalindrome('abba') === true
     rearrangePalindrome('abcdefg') === false
+    rearrangePalindrome('aaabbbccc') === false
