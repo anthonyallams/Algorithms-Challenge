@@ -17,3 +17,18 @@ const capitalize = (sen) => {
   }
   return capitalized;
 };
+
+// SOLUTION 2: Using for of loop
+const capitalize = (sen) => {
+  // Initialize variable
+  const capitalized = [];
+  let senArr = sen.split(" ");
+
+  // Iterate through the arrays
+  for (let word of senArr) {
+    // Add the capitalized initial char and rest of the characters
+    capitalized.push(word[0].toUpperCase() + word.slice(1));
+  }
+
+  return capitalized.join(" ");
+};
