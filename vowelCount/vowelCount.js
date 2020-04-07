@@ -26,3 +26,11 @@ const vowelCount = (str) => {
   }
   return count;
 };
+
+// SOLUTION 3: Using regex match function. Match return occurence in an array
+const vowelCount = (str) => {
+  const vowels = /[aeiou]/gi;
+  let count = str.match(vowels);
+
+  return count ? count.length : 0;
+};
