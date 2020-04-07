@@ -4,7 +4,8 @@ const flattenArray = (array) => {
   return array.reduce((acc, val) => {
     // Check if current array value is actually an array
     if (Array.isArray(val)) {
-      // If so, run recursive flattenArray on it and concat method to merge this array value into the acc
+      // If so, run recursive flattenArray on it and concat method to merge this array value into the acc and return new acc array.
+      // NB: concat merges and returns new array. Push adds to end of array and returns length. Hence, acc = acc.concat(...)
       acc = acc.concat(flattenArray(val));
     } else {
       // Run the push method to add array value to the end of the acc;
