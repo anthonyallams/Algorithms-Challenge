@@ -4,6 +4,6 @@
 
 ## EXAMPLE
 
-    vowels('Hi There') --> 3
-    vowels('Why do you ask?') --> 4
-    vowels('why') --> 0
+    vowelCount('Hi There') --> 3
+    vowelCount('Why do you ask?') --> 4
+    vowelCount('why') --> 0
