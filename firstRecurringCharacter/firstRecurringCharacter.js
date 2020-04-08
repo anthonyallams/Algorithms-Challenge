@@ -17,3 +17,17 @@ const firstRecurringCharacter = (arr) => {
   }
   return undefined;
 };
+
+// SOLUTION 2: Using nested loops to compare subsequent chars in the array
+const firstRecurringCharacter = (arr) => {
+  // Iterate through the array.
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      // If values in array i&j are equal && both values are not at same position in the array(ie comparing char to itself)
+      if (arr[i] === arr[j] && arr.indexOf(arr[i]) !== i) {
+        return arr[i];
+      }
+    }
+  }
+  return undefined;
+};
