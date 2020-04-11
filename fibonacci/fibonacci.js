@@ -15,3 +15,13 @@ const fibonacci = n => {
         } 
         return result[n];
 }
+
+SOLUTION 2: Using recursive Solution 
+
+const fibonacci = n => {
+    //Since fibonacci of 0 & 1 are constant, return n if its 0 or 1
+    if(n < 2){ return n}
+    
+    //Recursively call fibonacci on previous 2 entries till it returns to the nth-entry 
+    return fibonacci(n-1) + fibonacci(n-2)
+}
