@@ -20,6 +20,3 @@ const sumOddFibonacciNums = (n) => {
   });
   return sumOdds;
 };
-
-
-};
