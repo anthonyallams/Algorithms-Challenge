@@ -20,3 +20,23 @@ const sumOddFibonacciNums = (n) => {
   });
   return sumOdds;
 };
+
+// SOLUTION 2: Using Iterative while loop
+const sumOddFibonacciNums2 = (n) => {
+    let sumOdds = 0;
+    let prev = 0;
+    let curr = 1;
+  
+    // While the current value is less than n
+    // Check if the value is odd and add it to sumOdds
+    while (curr <= n) {
+      if (curr % 2 !== 0) {
+        sumOdds += curr;
+      }
+      // Add the two preceding values to get the current value and return the sumOdds
+      const newCurr = prev + curr;
+      prev = curr;
+      curr = newCurr;
+    }
+  
+    return sumOdds;
