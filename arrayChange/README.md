@@ -5,4 +5,6 @@
 
 ## EXAMPLE
 
-    inputArray([1,1,1]) ==> 2
+    arrayChange([1,1,1]) ==> 3
+    arrayChange([1,2,2,1]) ==> 4
+    arrayChange([1,1,1,1,1]) ==> 10
