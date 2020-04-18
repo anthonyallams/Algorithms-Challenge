@@ -1,6 +1,6 @@
 // SOLUTION 1: Using kanban Algorithm
 
-const arrayMaxConsecutiveSum = (arr) => {
+const arrayMaxConsecutiveSum = (arr, k) => {
   // Initialize sum and max values to 0
   let sum = 0;
   let max = 0;
