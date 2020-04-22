@@ -8,3 +8,13 @@ const arrayReplace = (inputArray, elemToReplace, substitutionElem) => {
     return acc.concat(arr);
   }, []);
 };
+
+// SOLUTION 2: Using map method
+const arrayReplace2 = (inputArray, elemToReplace, substitutionElem) => {
+  inputArray.map((arr, index) => {
+    arr === elemToReplace
+      ? (inputArray[index] = substitutionElem)
+      : inputArray[index];
+  });
+  return inputArray;
+};
