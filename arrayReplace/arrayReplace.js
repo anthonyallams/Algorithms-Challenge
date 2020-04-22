@@ -20,11 +20,22 @@ const arrayReplace2 = (inputArray, elemToReplace, substitutionElem) => {
 };
 
 // SOLUTION 3: Using for of loop and modifying the inputArray
-const arrayReplace2 = (inputArray, elemToReplace, substitutionElem) => {
+const arrayReplace3 = (inputArray, elemToReplace, substitutionElem) => {
   for (let [i, v] of inputArray.entries()) {
     inputArray[i] === elemToReplace
       ? (inputArray[i] = substitutionElem)
       : inputArray[i];
   }
   return inputArray;
+};
+
+// SOLUTION 4: Using for of loop and not modifying the inputArray
+const arrayReplace4 = (inputArray, elemToReplace, substitutionElem) => {
+  let newArr = [];
+  for (let arr of inputArray) {
+    arr === elemToReplace ? (arr = substitutionElem) : arr;
+
+    newArr.push(arr);
+  }
+  return newArr;
 };
