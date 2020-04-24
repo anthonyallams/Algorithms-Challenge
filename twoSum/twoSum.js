@@ -15,3 +15,15 @@ const twoSum = (nums, target) => {
     }
   }
 };
+
+// SOLUTION 2: Using the suboptimal nested for loop
+const twoSum = (nums, target) => {
+  // Loop through nums array twice and compare the each value against the other to get and return difference from target
+  for (let [i1, v] of nums.entries()) {
+    for (let [i2, v] of nums.entries()) {
+      if (nums[i1] + nums[i2] === target) {
+        return [i1, i2];
+      }
+    }
+  }
+};
