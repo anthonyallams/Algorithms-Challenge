@@ -8,7 +8,7 @@ const twoSum = (nums, target) => {
   for (let [index, value] of nums.entries()) {
     const difference = target - nums[index];
     const index2 = obj[difference];
-    if (index2 != null) {
+    if (index2 !== undefined) {
       return [index2, index];
     } else {
       obj[nums[index]] = index;
